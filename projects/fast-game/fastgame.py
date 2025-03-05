@@ -54,7 +54,7 @@ def btn1_pressed( obj ):
 btn1.irq( trigger=Pin.IRQ_FALLING, handler=btn1_pressed )
 
 # === Player 2 / Joueur 2 =================================
-led2 = Blinky( Pin( Pin.board.GP22, Pin.OUT ) ) # <<<<<<<<<<<<<<<<<<<<<<<<<<< GP26
+led2 = Blinky( Pin( Pin.board.GP26, Pin.OUT ) ) 
 btn2 = Pin( Pin.board.GP21, Pin.IN, Pin.PULL_UP )
 first_btn2 = None
 def btn2_pressed( obj ):
